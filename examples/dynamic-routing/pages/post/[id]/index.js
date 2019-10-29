@@ -5,7 +5,8 @@ import Header from '../../../components/header'
 const Post = () => {
   const router = useRouter()
   const { id } = router.query
-
+  // I see this line two times in console on dev server, in static export is just blank
+  console.log(`query.id = ${id}`);
   return (
     <>
       <Header />
